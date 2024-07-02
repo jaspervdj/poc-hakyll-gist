@@ -1,0 +1,22 @@
+Cabal-version:  2.2
+Name:           poc-hakyll-gist
+Version:        0.1.0.0
+Description:    Please see the README on GitHub at <https://github.com/jaspervdj/poc-hakyll-gist#readme>
+Homepage:       https://github.com/jaspervdj/poc-hakyll-gist#readme
+Bug-reports:    https://github.com/jaspervdj/poc-hakyll-gist/issues
+Author:         Jasper Van der Jeugt
+Maintainer:     m@jaspervdj.be
+Copyright:      2024 Jasper Van der Jeugt
+License:        GPL-2.0-or-later
+License-file:   LICENSE
+Build-type:     Simple
+
+Executable poc-hakyll-gist
+  Main-is:          Site.hs
+  Ghc-options:      -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  Default-language: Haskell2010
+  Build-depends:
+    base    >= 4.7  && < 5,
+    hakyll  >= 4.16 && < 4.17,
+    pandoc  >= 3.1  && < 3.2,
+    text    >= 2.0  && < 2.1
